@@ -118,17 +118,7 @@ function init(player, OPPONENT, diff){
 
             // draw the move on board
             drawOnBoard(player.computer, space.i, space.j);
-
-            // if(eve=="yes"){
-            //     // ctx.save();
-            //     let pq = minimax(gameData,player.computer).id;
-            //     let noob = getIJ(pq);
-            //     // drawOnBoard(player.man,noob.i,noob.j);
-            //     setInterval(function () {
-            //         drawOnBoard(player.man,noob.i,noob.j);
-            //     },2000);
-            //     // ctx.restore();
-            // }
+            
             // Check if the play wins
             if(isWinner(gameData, player.computer,tyy)){
                 setTimeout(function () {
