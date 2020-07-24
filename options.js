@@ -72,9 +72,7 @@ xBtn.addEventListener("click", function(){
 
     switchActive(oBtn, xBtn);
 });
-
-
-
+ 
 computerBtn.addEventListener("click", function(){
     OPPONENT = "computer";
     switchActive(humanBtn, computerBtn);
@@ -105,7 +103,7 @@ playBtn.addEventListener("click", function(){
         xBtn.style.backgroundColor = "#f0e3df";
         return;
     }
-
+    
     init(player, OPPONENT,diff);
     options.classList.add("hide");
 });
@@ -114,6 +112,7 @@ function switchActive(off, on){
     off.classList.remove("active");
     on.classList.add("active");
 }
+
 
 function changeit(a,b,c,d){
     a.classList.remove("active");
